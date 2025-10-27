@@ -1,0 +1,74 @@
+.error-message {
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  animation: shake 0.5s ease-out, errorPulse 2s ease-in-out infinite;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.5),
+    inset 0 1px 1px rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.error-message::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: #ffffff;
+  animation: errorLine 2s ease-in-out infinite;
+}
+
+@keyframes errorLine {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes errorPulse {
+  0%, 100% {
+    box-shadow: 
+      0 8px 32px rgba(0, 0, 0, 0.5),
+      inset 0 1px 1px rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    box-shadow: 
+      0 12px 40px rgba(0, 0, 0, 0.6),
+      inset 0 1px 1px rgba(255, 255, 255, 0.15);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
+  }
+}
+
+.error-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.error-text {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
