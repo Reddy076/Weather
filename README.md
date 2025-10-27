@@ -2,10 +2,12 @@
 
 A modern, elegant weather application built with React and Vite, featuring a sophisticated black and white design with a stunning weather-themed background. Perfect for outdoor enthusiasts who need quick, real-time weather updates for any city worldwide.
 
-![Weather Now](https://img.shields.io/badge/React-18.2-blue) ![Vite](https://img.shields.io/badge/Vite-5.0-purple) ![License](https://img.shields.io/badge/License-MIT-green)
+![Weather Now](https://img.shields.io/badge/React-18.2-blue) ![Vite](https://img.shields.io/badge/Vite-5.0-purple) ![License](https://img.shields.io/badge/License-MIT-green) [![Live Demo](https://img.shields.io/badge/Live%20Demo-Weather%20Now-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://weather-silk-xi.vercel.app/)
 
 <div align="center">
   <img src="https://images.unsplash.com/photo-1433863448220-78aaa064b47c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Weather Background" width="600"/>
+  
+  <h3>🚀 <a href="https://weather-silk-xi.vercel.app/" target="_blank">Live Demo</a> - Try it now!</h3>
 </div>
 
 ## Features ✨
@@ -176,7 +178,25 @@ https://api.open-meteo.com/v1/forecast
 
 ## Deployment 🌐
 
+### 🚀 Live Demo
+
+The application is currently deployed on **Vercel**:
+
+**🔗 [Live Application](https://weather-silk-xi.vercel.app/)**
+
+Visit the link above to see Weather Now in action!
+
 ### Quick Deployment Options
+
+#### Vercel (Current Deployment)
+This application is deployed on Vercel. To deploy your own version:
+
+```bash
+npm install -g vercel
+vercel
+```
+
+**Live URL:** [https://weather-silk-xi.vercel.app/](https://weather-silk-xi.vercel.app/)
 
 #### CodeSandbox
 1. Visit [codesandbox.io](https://codesandbox.io)
@@ -189,12 +209,6 @@ https://api.open-meteo.com/v1/forecast
 2. Use Vite + React template
 3. Upload or import files
 4. Get instant live preview
-
-#### Vercel
-```bash
-npm install -g vercel
-vercel
-```
 
 #### Netlify
 - Drag and drop the `dist` folder after building
